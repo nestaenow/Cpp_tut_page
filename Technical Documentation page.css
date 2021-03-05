@@ -1,0 +1,155 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #474644;
+  padding: 10px 0px 30px 0px;
+}
+header {
+  font-size: 2em;
+  font-weight: 700;
+  color: black;
+  margin: 5px;
+  font-weight: thin;
+}
+#navbar > header {
+  display: block;
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+nav {
+  display: block;
+}
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+  text-align: center;
+}
+#nav > li {
+    list-style: none;
+    text-align: -webkit-center;
+}
+#navbar li {
+    display: block;
+    padding: 10px 0px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+}
+hr {
+  width: 100%;
+}
+main {
+  margin-left: 350px;
+}
+code {
+  background: #d6d4d3;
+  color: #d94537;
+  padding: 2px 4px;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+.code {
+  background: #ded6d4;
+  padding-top: 2px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  width: 90%;
+}
+.actual > code {
+  color: #000000;
+  background: #ffffff;
+}
+.bground {
+  background: blue;
+  width: 96.8%;
+}
+.actual {
+  background: #ffffff;
+  padding: 10px 10px 10px 10px;
+  margin-left: 5px;
+}
+.key_word {
+  color: blue;
+}
+.number {
+  color: red;
+}
+.printed_output_input {
+  color: #d94537;
+}
+.output {
+  background: #d6d4d3;
+  width: 92.5%;
+}
+.bkgrnd {
+  background: #000000;
+  padding: 10px 10px 10px 10px;
+  margin: 8px;
+}
+#output1 {
+  background: #000000;
+  color: #ffffff;
+}
+.heading {
+  font-size: 1.2em;
+}
+#submit {
+  margin-top: 10px;
+  background: blue;
+  width: 20%;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.09em;
+  font-weight: 700;
+}
+#w3schools {
+  text-decoration: none;
+  color: #ffffff;
+}
+.retain {
+  margin: 10px 10px 10px 0px;
+  padding: 20px 20px 20px 20px;
+  background: #ffeda6;
+  width: 88%;
+}
+li {
+  padding-bottom: 0.8rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 1020px){
+#navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+}
+  main {
+    margin-left: 90px;
+  }
+  #submit {
+    width: 25%;
+  }
+  .retain {
+    width: 87.2%;
+  }
+}
