@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Technical Documentation page.css">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+  <nav id="navbar">
+      <header>C++ Tutorial</header>
+    <ul id="nav">
+      <hr><li><a class="nav-link" href="#What_is_C++?">What is C++?</a></li><hr>
+      <li><a class="nav-link" href="#Why_Use_C++">Why Use C++</a></li><hr>
+      <li><a class="nav-link" href="#C++_Get_Started">C++ Get Started</a></li><hr>
+      <li><a class="nav-link" href="#C++_Install_IDE">C++ Install IDE</a></li><hr>
+      <li><a class="nav-link" href="#C++_Quickstart">C++ Quickstart</a></li><hr>
+      <li><a class="nav-link" href="#C++_Syntax">C++ Syntax</a></li><hr>
+      <li><a class="nav-link" href="#C++_Output_(Print_Text)">C++ Output (Print Text)</a></li><hr>
+      <li><a class="nav-link" href="#C++_Output_(New_line)">C++ Output (New line)</a></li><hr>
+      <li><a class="nav-link" href="#Reference">Reference</a></li><hr>
+      </ul>
+    </nav>
+  <main id="main-doc">
+    <section class="main-section" id="What_is_C++?">
+      <header>What is C++?</header>
+      <p>C++ is a cross-platform language that can be used to create high-performance applications.</p>
+  
+  <p>C++ was developed by Bjarne Stroustrup, as an extension to the C language.</p>
+  
+  <p>C++ gives programmers a high level of control over system resources and memory.</p>
+  
+  <p>The language was updated 3 major times in 2011, 2014, and 2017 to C++11, C++14, and C++17.</p>
+    </section>
+    <section class="main-section"  id="Why_Use_C++">
+      <header>Why Use C++</header>
+      <p>C++ is one of the world's most popular programming languages.</p>
+  
+  <p>C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.</p>
+  
+  <p>C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.</p>
+  
+  <p>C++ is portable and can be used to develop applications that can be adapted to multiple platforms.</p>
+  
+  <p>C++ is fun and easy to learn!</p>
+  
+  <p>As C++ is close to <u>C#</u> and <u>Java</u>, it makes it easy for programmers to switch to C++ or vice versa</p>
+    </section>
+    <section class="main-section" id="C++_Get_Started">
+      <header>C++ Get Started</header>
+      <p>To start using C++, you need two things:</p>
+    <ul>
+  <li>A text editor, like Notepad, to write C++ code</li>
+  <li>A compiler, like GCC, to translate the C++ code into a language that the computer will understand</li>
+      </ul>
+  <p>There are many text editors and compilers to choose from. In this tutorial, we will use an IDE (see below).</p>
+    </section>
+    <section class="main-section" id="C++_Install_IDE">
+      <header>C++ Install IDE</header>
+      <ul>
+      <li>An IDE (Integrated Development Environment) is used to edit AND compile the code.</li>
+  
+  <li>Popular IDE's include Code::Blocks, Eclipse, and Visual Studio. These are all free, and they can be used to both edit and debug C++ code.</li>
+  
+  <li>Note: Web-based IDE's can work as well, but functionality is limited.</li>
+  
+  <li>We will use Code::Blocks in our tutorial, which we believe is a good place to start.</li>
+  
+  <li>You can find the latest version of Codeblocks at <a href="http://www.codeblocks.org/downloads/26" target="_blank">http://www.codeblocks.org/downloads/26</a>. Download the <code>mingw-setup.exe</code> file, which will install the text editor with a compiler.</li>
+        </ul>
+    </section>
+    <section class="main-section" id="C++_Quickstart">
+      <header>C++ Quickstart</header>
+      <p>Let's create our first C++ file.</p>
+  
+  <p>Open Codeblocks and go to <strong>File > New > Empty File</strong>.</p>
+  
+  <p>Write the following C++ code and save the file as <code>myfirstprogram.cpp</code> (<strong>File > Save File as</strong>):</p>
+      <div class="code">
+        <p class="heading">myfirstprogram.cpp</p>
+        <div class="bground"><div class="actual"><code id="code1">
+        #include &lt;iostream><br>
+        using namespace std;<br>
+  
+        <span class="key_word">int</span> main() {<br>
+             cout << <span class="printed_output_input">"Hello World!"</span>;<br>
+          <span class="key_word">return</span> <span class="number">0</span>;<br>
+          }
+          </code></div></div>
+      </div>
+        <p>Don't worry if you don't understand the code above - we will discuss it in detail in later chapters. For now, focus on how to run the code.</p>
+  
+  <p>In Codeblocks, it should look like this:</p>
+        <p><img id="image" src="https://www.w3schools.com/cpp/codeblocks2.png"></p>
+        <p>Then, go to Build > Build and Run to run (execute) the program. The result will look something to this:</p>
+  <div class="output"><div class="bkgrnd"><code id="output1">
+  Hello World!<br>
+  Process returned 0 (0x0) execution time : 0.011 s<br>
+  Press any key to continue.
+        </code></div></div>
+        <p><strong>Congratulations!</strong> You have now written and executed your first C++ program.</p>
+    </section>
+    <section class="main-section"  id="C++_Syntax">
+      <header>C++ Syntax</header>
+      <p>Let's break up the following code to understand it better:</p>
+      <div class="code">
+        <p class="heading">Example</p>
+        <div class="bground"><div class="actual"><code id="code1">
+        #include &lt;iostream> <br>
+        using namespace std;<br>
+  
+        <span class="key_word">int</span> main() {<br>
+             cout << <span class="printed_output_input">"Hello World!"</span>;<br>
+          <span class="key_word">return</span> <span class="number">0</span>;<br>
+          }
+          </code></div></div>
+          <div id="submit"><a id="w3schools" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_helloworld" target="_blank">Try it yourself</a></div>
+      </div>
+        <p class="heading">Example explained</p>
+  <p><strong>Line 1:</strong> <code>#include &lt;iostream> </code>is a <strong>header file library</strong> that lets us work with input and output objects, such as <code>cout</code> (used in line 5). Header files add functionality to C++ programs.</p>
+  
+  <p><strong>Line 2:</strong> <code>using namespace std</code> means that we can use names for objects and variables from the standard library.<p>
+  
+  <div class="retain">Don't worry if you don't understand how <code>#include &lt;iostream></code> and <code>using namespace std</code> works. Just think of it as something that (almost) always appears in your program.</div>
+  
+  <p><strong>Line 3:</strong> A blank line. C++ ignores white space.</p>
+  
+  <p><strong>Line 4:</strong> Another thing that always appear in a C++ program, is <code>int main()</code>. This is called a function. Any code inside its curly brackets <code>{}</code> will be executed.</p>
+  
+  <p><strong>Line 5:</strong> <code>cout</code> (pronounced "see-out") is an object used together with the insertion operator (<code> << </code>) to output/print text. In our example it will output "Hello World".</p>
+  
+  <p><strong>Note:</strong> Every C++ statement ends with a semicolon ;.</p>
+  
+  <p><strong>Note:</strong> The body of <code>int main()</code> could also been written as:
+  <code>int main () { cout << "Hello World! "; return 0; }</code></p>
+  
+  <p><strong>Remember:</strong> The compiler ignores white spaces. However, multiple lines makes the code more readable.</p>
+  
+  <p><strong>Line 6:</strong> <code>return 0</code> ends the main function.</p>
+  
+  <p><strong>Line 7:</strong> Do not forget to add the closing curly bracket <code>}</code> to actually end the main function.</p>
+    </section>
+    <section class="main-section" id="C++_Output_(Print_Text)">
+      <header>C++ Output (Print Text)</header>
+    <p>The <code>cout</code> object, together with the <code><<</code> operator, is used to output values/print text:</p>
+    <div class="code">
+        <p class="heading">Example</p>
+        <div class="bground"><div class="actual"><code id="code1">
+        #include &lt;iostream> <br>
+        using namespace std;<br>
+  
+        <span class="key_word">int</span> main() {<br>
+             <strong>cout</strong> << <span class="printed_output_input">"Hello World!"</span>;<br>
+          <span class="key_word">return</span> <span class="number">0</span>;<br>
+          }
+          </code></div></div>
+          <div id="submit"><a id="w3schools" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_helloworld" target="_blank">Try it yourself</a></div>
+      </div>
+      <p>You can add as many <code>cout</code> objects as you want. However, note that it does not insert a new line at the end of the output:</p>
+      <div class="code">
+        <p class="heading">Example</p>
+        <div class="bground"><div class="actual"><code id="code1">
+        #include &lt;iostream> <br>
+        using namespace std;<br>
+  
+        <span class="key_word">int</span> main() {<br>
+             <strong>cout</strong> << <span class="printed_output_input">"Hello World!"</span>;<br>
+          <strong>cout</strong> << <span class="printed_output_input">"I am learning C++"</span>;<br>
+          <span class="key_word">return</span> <span class="number">0</span>;<br>
+          }
+          </code></div></div>
+          <div id="submit"><a id="w3schools" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_output2" target="_blank">Try it yourself</a></div>
+      </div>
+    </section>
+    <section class="main-section"  id="C++_Output_(New_line)">
+      <header>C++ Output (New line)</header>
+      <p>To insert a new line, you can use the <code>\n</code> character:</p>
+      <div class="code">
+        <p class="heading">Example</p>
+        <div class="bground"><div class="actual"><code id="code1">
+        #include &lt;iostream> <br>
+        using namespace std;<br>
+  
+        <span class="key_word">int</span> main() {<br>
+             <strong>cout</strong> << <span class="printed_output_input">"Hello World!<strong>\n</strong>"</span>;<br>
+          <strong>cout</strong> << <span class="printed_output_input">"I am learning C++"</span>;<br>
+          <span class="key_word">return</span> <span class="number">0</span>;<br>
+          }
+          </code></div></div>
+          <div id="submit"><a id="w3schools" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_output3" target="_blank">Try it yourself</a></div>
+      </div>
+      <p><strong>Tip:</strong> Two <code>\n</code> characters after each other will create a blank line:</p>
+      <div class="code">
+        <p class="heading">Example</p>
+        <div class="bground"><div class="actual"><code id="code1">
+        #include &lt;iostream> <br>
+        using namespace std;<br>
+  
+        <span class="key_word">int</span> main() {<br>
+             <strong>cout</strong> << <span class="printed_output_input">"Hello World!<strong>\n\n</strong>"</span>;<br>
+          <strong>cout</strong> << <span class="printed_output_input">"I am learning C++"</span>;<br>
+          <span class="key_word">return</span> <span class="number">0</span>;<br>
+          }
+          </code></div></div>
+          <div id="submit"><a id="w3schools" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_output4" target="_blank">Try it yourself</a></div>
+      </div>
+      <p>Another way to insert a new line, is with the <code>endl</code> manipulator:</p>
+      <div class="code">
+        <p class="heading">Example</p>
+        <div class="bground"><div class="actual"><code id="code1">
+        #include &lt;iostream> <br>
+        using namespace std;<br>
+  
+        <span class="key_word">int</span> main() {<br>
+             <strong>cout</strong> << <span class="printed_output_input">"Hello World!"</span><<<strong> endl</strong>;<br>
+          <strong>cout</strong> << <span class="printed_output_input">"I am learning C++"</span>;<br>
+          <span class="key_word">return</span> <span class="number">0</span>;<br>
+          }
+          </code></div></div>
+          <div id="submit"><a id="w3schools" href="https://www.w3schools.com/cpp/trycpp.asp?filename=demo_output5" target="_blank">Try it yourself</a></div>
+      </div>
+      <div class="retain">Both <code>\n</code> and <code>endl</code> are used to break lines. However, <code>\n</code> is used more often and is the preferred way.</div>
+    </section>
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <p>All informaion in the page was gotten from <strong>W3Schools</strong>. In order to learn more on <strong>C++</strong> visit their actual website at <a href="https://www.w3schools.com/cpp/" target="_blank">https://www.w3schools.com/cpp/</a></p>
+    </section>
+  </main>
+  </body>
+</html>
